@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Category, Books } from './components/component';
 
 const App = () => (
-  <div>
+  <div className=''>
     <Router>
       <Routes>
         <Route path='/books' index element={<Books />} />
