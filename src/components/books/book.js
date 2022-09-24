@@ -7,7 +7,7 @@ const Book = () => (
       <button type="button">Remove</button>
     </div>
     <div className="card">
-      <h2>Second Book</h2>
+      <h2>The Second Book</h2>
       <button type="button">Remove</button>
     </div>
     <div className="card">
