@@ -1,6 +1,6 @@
-const ADD_CATEGORY = 'ADD_CATEGORY';
-const REMOVE_CATEGORY = 'REMOVE_CATEGORY';
-const CHECK_STATUS = 'CHECK_STATUS';
+const ADD_CATEGORY = 'bookstore/books/ADD_CATEGORY';
+const REMOVE_CATEGORY = 'bookstore/books/REMOVE_CATEGORY';
+const CHECK_STATUS = 'bookstore/books/CHECK_STATUS';
 
 export default function reducer(categories = [], action) {
   switch (action.type) {

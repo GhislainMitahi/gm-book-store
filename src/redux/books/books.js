@@ -1,6 +1,6 @@
-const ADD_BOOK = 'ADD_BOOK';
-const REMOVE_BOOK = 'REMOVE_BOOK';
-const FETCH_ALL_BOOK = 'FETCH_ALL_BOOK';
+const ADD_BOOK = 'bookstore/books/ADD_BOOK';
+const REMOVE_BOOK = 'bookstore/books/REMOVE_BOOK';
+const FETCH_ALL_BOOK = 'bookstore/books/FETCH_ALL_BOOK';
 
 export const reducer = (book = [], action) => {
   switch (action.type) {
