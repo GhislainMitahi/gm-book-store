@@ -1,6 +1,9 @@
 import React from 'react';
 
-const Book = () => (
+const Book = () => {
+
+
+  return(
   <main>
     <div className="card">
       <h2>First Book</h2>
@@ -15,5 +18,5 @@ const Book = () => (
       <button type="button">Remove</button>
     </div>
   </main>
-);
+)};
 export default Book;
