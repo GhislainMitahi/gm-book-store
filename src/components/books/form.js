@@ -13,7 +13,7 @@ const Form = () => (
       name="author"
       placeholder="Author"
     />
-    <button type="submit" value="submit">Add book</button>
+    <button type="submit" value="submit">Add one book</button>
   </div>
 );
 
