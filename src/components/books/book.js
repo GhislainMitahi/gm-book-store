@@ -29,7 +29,7 @@ const book = () => {
             </div>
             <ul className="list">
               <li>
-                <button type="button">Comment</button>
+                <button type="button">comment</button>
               </li>
               <li>
                 <button
