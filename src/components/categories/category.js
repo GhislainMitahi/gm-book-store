@@ -18,7 +18,7 @@ const index = () => {
           type='submit'
           onClick={() => handleClick()}
         >
-          Check status
+          Check Status
         </button>
         <h1>{status}</h1>
       </div>

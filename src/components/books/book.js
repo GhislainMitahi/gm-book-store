@@ -1,7 +1,7 @@
 /* eslint-disable jsx-quotes */
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { removeBook } from '../../redux/books/books';
+import { removeBook, getAllBooks } from '../../redux/books/books';
 
 const book = () => {
   const post = useSelector((state) => state.bookReducer);
@@ -10,51 +10,58 @@ const book = () => {
     e.preventDefault();
     dispatch(removeBook(id));
   };
+  useEffect(() => {
+    dispatch(getAllBooks());
+  }, []);
+
   return (
     <>
       {post.map((book) => (
         <div
-          key={book.id}
-          className='book-card'
+          key={book.item_id}
+          className="row"
         >
-          <section>
+          <section className="grid-item">
             <div>
-              <p>{book.bookName}</p>
-              <p>{book.bookAuthor}</p>
+              <p><span className="category">{book.category}</span></p>
+              <p><span className="title">{book.title}</span></p>
+              <p><span className="author">{book.author}</span></p>
             </div>
-            <ul>
+            <ul className="list">
               <li>
-                Comment
+                <button type="button">comment</button>
               </li>
               <li>
                 <button
                   className='cursor-pointer'
-                  onClick={(e) => handleClick(book.id, e)}
-                  type='submit'
+                  onClick={(e) => handleClick(book.item_id, e)}
+                  type='button'
                 >
                   Remove
                 </button>
               </li>
-              <li>Edit</li>
+              <li>
+                <button type="button">Edit</button>
+              </li>
             </ul>
           </section>
-          <section>
-            <div className='circle' />
-            <div>
-              <p>
+          <section className="grid-item item1">
+            <div className="oval-2" />
+            <div className="completed-txt-parcent">
+              <span className="completed-parcent">
                 {book.completed}
-                $
-              </p>
-              <p>Completed</p>
+                75%
+              </span>
+              <div className="completed-text">completed</div>
             </div>
           </section>
-          <section>
+          <section className="grid-item">
             <div>
-              <p>CURRENT CHAPTER</p>
-              <p>Chapter 17</p>
+              <p className="current">CURRENT CHAPTER</p>
+              <p className="chap">Chapter 17</p>
             </div>
             <button type='submit'>
-              Update progress
+              UPDATE PROGRESS
             </button>
           </section>
         </div>

@@ -4,33 +4,34 @@ import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import { createBook } from '../../redux/books/books';
 
-const book = () => {
+const books = () => {
   const [book, setBook] = useState({
-    bookName: '',
+    completed: 64,
+    chapter: 20,
+    chapterTitle: '',
+    item_id: uuidv4(),
+    title: '',
+    author: '',
     category: '',
-    bookAuthor: '',
   });
-  const { bookAuthor, bookName, category } = book;
+  const { author, title, category } = book;
   const dispatch = useDispatch();
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     const newBook = {
-      id: uuidv4(),
-      bookName,
-      category,
-      bookAuthor,
       completed: 64,
       chapter: 20,
       chapterTitle: 'Harry porter',
+      item_id: uuidv4(),
+      title,
+      author,
+      category,
     };
+
     dispatch(createBook(newBook));
-    setBook({
-      bookName: '',
-      category: '',
-      bookAuthor: '',
-    });
+    setBook(newBook);
   };
   const handleChange = (e) => {
     setBook({
@@ -40,37 +41,40 @@ const book = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className='form'>
-      <input
-        type='text'
-        placeholder='Book title'
-        required
-        name='bookName'
-        value={bookName}
-        onChange={handleChange}
-      />
-      <input
-        type='text'
-        name='bookAuthor'
-        value={bookAuthor}
-        placeholder='Book author'
-        onChange={handleChange}
-        required
-      />
-      <input
-        name='category'
-        id='category'
-        placeholder='Category'
-        value={category}
-        onChange={handleChange}
-        required
-      />
-      <input
-        type='submit'
-        value='Add book'
-      />
-    </form>
+    <>
+      <h2>Add new book</h2>
+      <form onSubmit={handleSubmit} className='form'>
+        <input
+          type='text'
+          placeholder='Book title'
+          required
+          name='title'
+          value={title}
+          onChange={handleChange}
+        />
+        <input
+          type='text'
+          name='author'
+          value={author}
+          placeholder='Book author'
+          onChange={handleChange}
+          required
+        />
+        <input
+          name='category'
+          id='category'
+          placeholder='Category'
+          value={category}
+          onChange={handleChange}
+          required
+        />
+        <input
+          type='submit'
+          value='Add book'
+        />
+      </form>
+    </>
   );
 };
 
-export default book;
+export default books;
