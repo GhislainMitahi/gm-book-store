@@ -1,6 +1,6 @@
 # BookStore
 
-The bookstore project is built wit react with a purpose to classify books
+The bookstore project is built with react with a purpose to classify books
 
 ## Built With
 
