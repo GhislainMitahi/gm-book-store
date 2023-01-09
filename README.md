@@ -4,7 +4,7 @@ The bookstore project is built with reactjs with a purpose to classify books
 
 ## Built With
 
-- REACT
+- REACTJS
 - CSS
 
 ## Getting Started
