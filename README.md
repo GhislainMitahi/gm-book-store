@@ -1,6 +1,6 @@
 # BookStore
 
-The bookstore project is built with reactjs and ,css with a purpose to classify books and thier Author
+The bookstore project is built with reactjs and, css with a purpose to classify books and thier Author
 
 ## Built With
 
@@ -10,7 +10,7 @@ The bookstore project is built with reactjs and ,css with a purpose to classify 
 ## Getting Started
 
 
-To get a local copy up and :
+To get a local copy up and:
 
 - Open your terminal and cd to the folder where you want to put the project and run :
  ```
