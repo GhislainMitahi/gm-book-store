@@ -22,7 +22,7 @@ To get a local copy up and :
 - Create-react-app
 - Git/Github
 - VSCode or another equivalent tool
-- Html, Css and Javascript
+- Html,Css and Javascript
 - Webpack
 - APIs
 - Jest
