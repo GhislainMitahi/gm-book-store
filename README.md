@@ -1,7 +1,7 @@
 # BookStore
 
 The bookstore project is built with reactjs and, css with a purpose to classify books and thier Author
-This project
+This project helped me to understand the concept in global.
 
 ## Built With
 
