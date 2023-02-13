@@ -49,9 +49,9 @@ Run the following tests:
 - npx stylelint "**/*.{css,scss}"
 - npx eslint .
 
-## Authors
+## 👤 Authors
 
-👤 **Author**
+ **Author**
 
 - GitHub: [@GhislainMitahi](https://github.com/GhislainMitahi)
 - Twitter: [@GMItahi](https://https://twitter.com/GMitahi)
