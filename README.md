@@ -51,8 +51,6 @@ Run the following tests:
 
 ## 👤 Authors
 
- **Author**
-
 - GitHub: [@GhislainMitahi](https://github.com/GhislainMitahi)
 - Twitter: [@GMItahi](https://https://twitter.com/GMitahi)
 - LinkedIn: [ghislainmitahi](https://linkedin.com/in/ghislain-mitahi/)
